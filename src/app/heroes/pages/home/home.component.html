@@ -28,10 +28,12 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button mat-button>logout</button>
+    <span> {{ auth.usuario }} </span>
+    <button mat-button (click)="logout()">logout</button>
   </mat-toolbar>
 
   <div class="container">
     <router-outlet></router-outlet>
   </div>
 </mat-sidenav-container>
+
